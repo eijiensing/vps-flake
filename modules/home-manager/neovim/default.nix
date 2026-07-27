@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }:
 {
   home.packages = [
+    pkgs.fzf
     pkgs.nixd
     pkgs.nixfmt
     pkgs.lua-language-server
