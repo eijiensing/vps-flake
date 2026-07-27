@@ -1,0 +1,47 @@
+{ lib, ... }:
+{
+  disko.devices = {
+    disk = {
+      main = {
+        type = "disk";
+        device = "/dev/vda";
+
+        content = {
+          type = "gpt";
+
+          partitions = {
+            ESP = {
+              size = "512M";
+              type = "EF00";
+
+              content = {
+                type = "filesystem";
+                format = "vfat";
+                mountpoint = "/boot";
+              };
+            };
+
+            swap = {
+              size = "4G";
+              content = {
+                type = "swap";
+                resumeDevice = true;
+              };
+            };
+
+            root = {
+              size = "100%";
+
+              content = {
+                type = "filesystem";
+                format = "ext4";
+                mountpoint = "/";
+              };
+            };
+          };
+
+        };
+      };
+    };
+  };
+}
