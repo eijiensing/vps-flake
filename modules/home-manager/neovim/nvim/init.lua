@@ -61,9 +61,4 @@ map("n", "grr", ":FzfLua lsp_references<CR>")
 
 vim.lsp.enable({ "nixd" })
 
--- colors
-vim.g.gruvbox_material_background = "hard"
-
-vim.cmd.colorscheme("gruvbox-material")
-
 vim.cmd(":hi statusline guibg=NONE")

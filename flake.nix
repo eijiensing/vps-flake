@@ -10,8 +10,8 @@
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-# Disko
-disko.url = "github:nix-community/disko";
+    # Disko
+    disko.url = "github:nix-community/disko";
 
     # Neovim
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay?rev=1e7087c03f0fb1935f73bd28ba044714cfab34f4";
@@ -37,7 +37,7 @@ disko.url = "github:nix-community/disko";
           modules = [
             ./hosts/netcup/configuration.nix
             self.nixosModules
-	inputs.disko.nixosModules.disko
+            inputs.disko.nixosModules.disko
           ];
         };
       };
