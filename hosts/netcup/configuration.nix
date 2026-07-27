@@ -5,7 +5,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-		./disko.nix
+	./disko.nix
   ];
 
   nixpkgs = {
