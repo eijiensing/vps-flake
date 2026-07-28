@@ -1,4 +1,4 @@
-eijiens.ing {
+eijiens.ing, www.eijiens.ing {
     root /srv/portfolio
     file_server
 
