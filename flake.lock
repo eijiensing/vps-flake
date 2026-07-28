@@ -181,6 +181,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1785090369,
+        "narHash": "sha256-m0pDuRJG7EDo9ri+4Ksu83VsI+PlxNC9lNBfydejce4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "624af665418d3c65d544145b4d34ad696439570e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "disko": "disko",
@@ -188,7 +204,26 @@
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs_3",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "yt-download-api": "yt-download-api"
+      }
+    },
+    "yt-download-api": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1785239283,
+        "narHash": "sha256-nb3Q9WQwRvqZg4bnnWlHani2SX/E5JGlHS7OFbJOGYU=",
+        "owner": "eijiensing",
+        "repo": "yt-download-api",
+        "rev": "04f5d083ec6777897a1b12f2a3061a12dfd24254",
+        "type": "github"
+      },
+      "original": {
+        "owner": "eijiensing",
+        "repo": "yt-download-api",
+        "type": "github"
       }
     }
   },
