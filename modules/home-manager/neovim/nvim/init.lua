@@ -9,7 +9,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes"
-vim.opt.clipboard = "unnamedplus"
+vim.g.clipboard = 'osc52'
 
 vim.diagnostic.config({
 	severity_sort = true

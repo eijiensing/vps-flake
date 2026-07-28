@@ -1,0 +1,6 @@
+eijiens.ing {
+    root /srv/portfolio
+    file_server
+
+    try_files {path} /index.html
+}
