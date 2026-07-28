@@ -19,6 +19,11 @@
 
     # Neovim
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay?rev=1e7087c03f0fb1935f73bd28ba044714cfab34f4";
+
+    # My packages
+    yt-download-api = {
+      url = "github:eijiensing/yt-download-api";
+    };
   };
 
   outputs =

@@ -4,5 +4,6 @@
     ./ssh
     ./caddy
     ./networking
+		./yt-download-api
   ];
 }
