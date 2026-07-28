@@ -3,5 +3,6 @@
     ./utils
     ./ssh
     ./caddy
+    ./networking
   ];
 }
