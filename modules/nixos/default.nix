@@ -1,6 +1,7 @@
 {
   imports = [
     ./utils
-./ssh
+    ./ssh
+    ./caddy
   ];
 }
