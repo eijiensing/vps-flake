@@ -10,6 +10,10 @@
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
+    # Nix-index db
+    nix-index-database.url = "github:nix-community/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+
     # Disko
     disko.url = "github:nix-community/disko";
 
@@ -38,6 +42,8 @@
             ./hosts/netcup/configuration.nix
             self.nixosModules
             inputs.disko.nixosModules.disko
+            inputs.nix-index-database.nixosModules.default
+            { programs.nix-index-database.comma.enable = true; }
           ];
         };
       };

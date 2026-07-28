@@ -23,7 +23,7 @@
       				set nix_indicator ""
       		end
 
-      		printf '%s%s%s%s ' (prompt_pwd) (vps) $nix_indicator (set_color normal) (fish_git_prompt)
+      		printf '%s%s%s%s (vps) ' (prompt_pwd) $nix_indicator (set_color normal) (fish_git_prompt)
       end
 
       function fish_mode_prompt
