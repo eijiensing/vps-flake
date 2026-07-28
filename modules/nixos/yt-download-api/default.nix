@@ -1,4 +1,8 @@
 { inputs, ... }: {
+  services.caddy.virtualHosts."yt.eijiens.ing".extraConfig = ''
+    reverse_proxy 127.0.0.1:3000
+  '';
+
   systemd.services.yt-download-api = {
     wantedBy = [ "multi-user.target" ];
 

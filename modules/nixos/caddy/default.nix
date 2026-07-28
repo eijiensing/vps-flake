@@ -1,6 +1,6 @@
 { ... }: {
   services.caddy = {
     enable = true;
-		configFile = ./Caddyfile;
+    # configFile = ./Caddyfile;
   };
 }
