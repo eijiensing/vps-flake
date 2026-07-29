@@ -5,5 +5,6 @@
     ./caddy
     ./networking
 		./yt-download-api
+		./portfolio
   ];
 }
