@@ -4,7 +4,8 @@
     ./git
     ./neovim
     ./tmux
-		# ./nix-index
-		#   ./comma
+    ./syncthing
+    # ./nix-index
+    #   ./comma
   ];
 }
