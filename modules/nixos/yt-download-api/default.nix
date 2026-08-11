@@ -15,6 +15,9 @@
       ];
 
       Restart = "always";
+
+      User = "eiji";
+      Group = "users";
     };
   };
 }
