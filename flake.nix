@@ -52,6 +52,12 @@
             inputs.disko.nixosModules.disko
             inputs.nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
+            inputs.nix-minecraft.nixosModules.minecraft-servers
+            {
+              nixpkgs.overlays = [
+                inputs.nix-minecraft.overlay
+              ];
+            }
           ];
         };
       };

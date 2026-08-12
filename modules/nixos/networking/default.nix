@@ -10,9 +10,11 @@
         443
         22000 # syncthing transfer
         22067 # syncthing relay
+        25565
       ];
       allowedUDPPorts = [
         22000 # syncthing transfer (quic)
+        25565
       ];
     };
   };
