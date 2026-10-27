@@ -11,7 +11,7 @@
       enable = true;
       package = pkgs.fabricServers.fabric-1_21_11;
 
-      jvmOpts = "-Xms1G -Xmx2G";
+      jvmOpts = "-Xmx2G";
 
       serverProperties = {
         server-port = 25565;
