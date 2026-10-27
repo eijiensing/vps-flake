@@ -281,11 +281,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1793103010,
-        "narHash": "sha256-YT7JJi6UhSYR7+V6BuCjAUTZZeoeZUhXTJj/0xXptMo=",
+        "lastModified": 1793104237,
+        "narHash": "sha256-PcVgwFP2YUsT20BVTLmAP6IAeE397Qu/x0P3IXRjHZQ=",
         "owner": "eijiensing",
         "repo": "yt-download-api",
-        "rev": "9c16ef83024196bbf5372aa0b6d3ac917f6db4b9",
+        "rev": "5db92eade8eee0f0fee964d361322aa3f0ae486c",
         "type": "github"
       },
       "original": {
