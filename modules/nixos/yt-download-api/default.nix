@@ -6,10 +6,15 @@
   systemd.services.yt-download-api = {
     wantedBy = [ "multi-user.target" ];
 
+    preStart = ''
+      mkdir -p /home/eiji/.local/state/yt-download-api
+    '';
+
     serviceConfig = {
       ExecStart = "${inputs.yt-download-api.packages.x86_64-linux.default}/bin/yt-download-api";
 
       Environment = [
+        "DATABASE_URL=sqlite:///home/eiji/.local/state/yt-download-api/main.db"
         "YT_OUTPUT_PATH=/home/eiji/Sync/music/"
         "YT_API_KEY=test123"
       ];
