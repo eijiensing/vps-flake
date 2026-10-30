@@ -9,7 +9,7 @@
 
     servers.vanilla = {
       enable = true;
-      package = pkgs.fabricServers.fabric-1_21_11;
+      package = pkgs.fabricServers.fabric-26_3;
 
       jvmOpts = "-Xmx2G";
 
