@@ -9,9 +9,12 @@
 
     servers.vanilla = {
       enable = true;
-      package = pkgs.fabricServers.fabric-26_3;
 
-      jvmOpts = "-Xmx2G";
+      package = pkgs.fabricServers.fabric-26_3.override {
+        jre_headless = pkgs.jdk25_headless;
+      };
+
+      jvmOpts = "-Xmx2G -XX:UseAVX=2";
 
       serverProperties = {
         server-port = 25565;
